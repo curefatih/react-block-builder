@@ -30,6 +30,10 @@ output will be
 
 ![image](https://user-images.githubusercontent.com/41006925/118379960-366b3300-b5e7-11eb-8c37-8ce1926826d3.png)
 
+## TODO
+
+- [ ] Draggable/Droppable blocks
+- [ ] Inner block 
 
 ## License
 
