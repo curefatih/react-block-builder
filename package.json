@@ -1,13 +1,13 @@
 {
-  "name": "block-builder",
+  "name": "react-block-builder",
   "version": "1.0.0",
   "description": "react block builder",
   "author": "curefatih",
   "license": "MIT",
-  "repository": "curefatih/block-builder",
+  "repository": "curefatih/react-block-builder",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "source": "src/index.tsx",
+  "source": "src/index.ts",
   "engines": {
     "node": ">=10"
   },

@@ -1,0 +1,49 @@
+.block {
+  padding: 30px;
+}
+
+.head,
+.foot {
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.head{
+  border-radius: .2em .2em 0 0;
+  position: relative;
+}
+
+.head::before {
+  content: "\205E\205E";
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  color: #404040;
+}
+
+.foot{
+  border-radius: 0 0 .2em .2em;
+}
+
+.content {
+  position: relative;
+  padding: 10px 15px;
+  font-size: .8em;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 7px;
+  background-color: #eee;
+  border-width: 1px;
+  border-color: transparent #ddd transparent #ddd;
+  border-style: solid;
+  opacity: .8;
+}
