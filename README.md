@@ -19,12 +19,15 @@ npm install --save block-builder
           height: "100px"
         }}
       >
-        Your components
-        <Block head="Heading">
-          Also your components
-        </Block>
+        {(value: DOMRect) =>
+          <>
+            Your components
+            <Block head="Heading" allowInner parentPos={value} style={{ width: 300 }}>
+              Also your components
+            </Block>
+          </>
+        }
       </BlockWrapper>
-    </div>
 ```
 output will be
 
@@ -33,7 +36,7 @@ output will be
 ## TODO
 
 - [ ] Draggable/Droppable blocks
-- [ ] Inner block 
+- [ ] Inner block
 
 ## License
 
