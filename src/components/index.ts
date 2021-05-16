@@ -1,2 +1,2 @@
 export { Block } from './Block/Block';
-export { BlockWrapper } from './BlockWrapper/BlockWrapper';
+export { BlockWrapper, BlockContext } from './BlockWrapper/BlockWrapper';

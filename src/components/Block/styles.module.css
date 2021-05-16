@@ -1,5 +1,5 @@
 .block {
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .head,
@@ -12,6 +12,7 @@
 .head{
   border-radius: .2em .2em 0 0;
   position: relative;
+  cursor: move;
 }
 
 .head::before {
@@ -46,4 +47,8 @@
   border-color: transparent #ddd transparent #ddd;
   border-style: solid;
   opacity: .8;
+}
+
+.rounded{
+  border-radius: .2em;
 }
