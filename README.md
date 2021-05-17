@@ -12,12 +12,12 @@ npm install --save block-builder
 
 ## Usage
 
-### <BlockWrapper />
+### `<BlockWrapper />`
 > TODO
-### <DragableBlock />
+### `<DragableBlock />`
 > TODO
 
-### <Block />
+### `<Block />`
 > TODO
 
 
