@@ -23,14 +23,9 @@
   border-radius: 0 0 .2em .2em;
 }
 
-.contentC {
-  position: relative;
-  margin-left: 3px;
-}
-
 .content {
   position: relative;
-  padding: 0 10px;
+  padding: 0 0 0 8px;
   font-size: .8rem;
   background-color: #fff;
   border-right: 1px solid #ddd;
@@ -42,7 +37,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 7px;
+  width: 3px;
   background-color: #eee;
   border-width: 1px;
   border-color: transparent #ddd transparent #ddd;
