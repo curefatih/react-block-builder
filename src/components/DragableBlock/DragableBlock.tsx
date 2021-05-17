@@ -81,6 +81,8 @@ export const DragableBlock: React.SFC<BlockProps> = (props: BlockProps) => {
         position: "absolute",
         left: `${pos.x}px`,
         top: `${pos.y}px`,
+        zIndex: pos.mouseDown ? 9999 : "auto",
+        border: pos.mouseDown ? "1px solid #0984e3" : undefined,
         ...props.style
       }}
     >
