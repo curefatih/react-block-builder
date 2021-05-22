@@ -13,12 +13,21 @@ npm install --save block-builder
 ## Usage
 
 ### `<BlockWrapper />`
-> TODO
+Outer most component. Expands size as parents size.
+
 ### `<DragableBlock />`
-> TODO
+Component that can be draggable inside the wrapper.
 
 ### `<Block />`
-> TODO
+Static block component.
+
+#### Usable props for both block types. 
+
+`allowInner: boolean`: allows children components. 
+
+`head: string`: header value.
+
+`foot: string`: footer string.
 
 
 ``` jsx
@@ -29,15 +38,16 @@ npm install --save block-builder
       border: "1px solid #333"
     }}
   >
-    {(value: DOMRect) =>
+    // position needed for the child components to calculate offset
+    {(pos: DOMRect) => 
       <>
         Your components
-        <DragableBlock head="Heading" allowInner parentPos={value} style={{ width: 300 }}>
+        <DragableBlock head="Heading" allowInner parentPos={pos} style={{ width: 300 }}>
           inner components
           <Block head="Allowing content" allowInner style={{ width: "100%" }}>components</Block>
           <Block head="I am not allowing content" style={{ width: "100%" }}>components</Block>
         </DragableBlock>
-        <DragableBlock head="Heading" allowInner parentPos={value} style={{ width: 300 }}>
+        <DragableBlock head="Heading" allowInner parentPos={pos} style={{ width: 300 }}>
           components
         </DragableBlock>
       </>
@@ -50,10 +60,13 @@ npm install --save block-builder
 
 ## TODO
 
-* [ ] Draggable/Droppable blocks
-* [ ] Inner block > initiated
+* [x] Draggable/Droppable blocks
+* [ ] Inner block 
+  -  * [x] initiated (`<Block />`)
+  -  * [ ] change component type dragable block when remove movement??
 * [ ] Support for initial properties
 * [ ] Enable custom styling
+* [ ] Learn how to write "draggable" 
 * [ ] [suggest a todo/improvement](https://github.com/curefatih/react-block-builder/issues/new)
 
 ## License
